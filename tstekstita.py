@@ -317,6 +317,7 @@ class lomake():
         
         
     def graafinen2srt(self): #Graafiset tekstit sisällytetyksi txt
+        global XTERM
         #print("graafinen2srt")
         valittuTekstiIndex=self.ui.listWidget_valitseTekstitys.currentRow()
         longSubLang="fin"
