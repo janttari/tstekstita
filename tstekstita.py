@@ -97,7 +97,7 @@ class Ui_Form(object):
         self.label_2.setText(_translate("Form", "Tallenna:"))
         self.pushButton_avaaTiedosto.setText(_translate("Form", "..."))
         self.pushButton_tallennaTiedosto.setText(_translate("Form", "..."))
-        self.label_3.setText(_translate("Form", "Valitse tekistitysraita:"))
+        self.label_3.setText(_translate("Form", "Valitse tekstitysraita:"))
         self.label_4.setText(_translate("Form", "Valitse audioraidat:"))
         __sortingEnabled = self.listWidget_valitseTekstiTyyppi.isSortingEnabled()
         self.listWidget_valitseTekstiTyyppi.setSortingEnabled(False)

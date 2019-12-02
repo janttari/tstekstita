@@ -127,7 +127,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Valitse tekistitysraita:</string>
+    <string>Valitse tekstitysraita:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
