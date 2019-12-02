@@ -10,7 +10,7 @@ Ohjelman tarvitsemat riippuvuudet pitäisi asentua suorittamalla skripti **asenn
 Sen jälkeen ohjelma **tstekstita.py** avaa käyttöliittymän, jossa valitaan tiedosto ja tekstitys- ja audioraidat.
 Painikkeella "Aloita" muunnostyö aloitetaan.
 
-HUOM!**asenna-riippuvuudet** toimii vain *buntu-pohjaisilla jakeluilla, ehkä Debianissa ja Linux Mintissä myös.
+HUOM! **asenna-riippuvuudet** toimii vain *buntu-pohjaisilla jakeluilla, ehkä Debianissa ja Linux Mintissä myös.
 Kun riippuvuudet on kunnossa, varsinainen **tstekstita.py** pitäisi toimia muissakin Linux-jakeluissa!
 
 
