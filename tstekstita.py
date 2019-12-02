@@ -137,7 +137,6 @@ class txt2srt():
                 return s[alku:loppu]
             except ValueError:
                 return ""
-        
         if os.path.isfile(temppiHakemisto+"/subs.xml"): #************************ xml created by ccextactor ****
             kirjoitaSrt=open(temppiHakemisto+"/subs.srt", "w")
             with open(temppiHakemisto+"/subs.xml", "r") as fp:
@@ -179,7 +178,6 @@ class txt2srt():
                             kierros+=1
             kirjoitaSrt.close()
         
-        
         elif os.path.isfile(temppiHakemisto+"/png/subs.xml"): #************************ xml created by subp2png ****
             kirjoitaSrt=open(temppiHakemisto+"/tekstit.srt", "w")
             with open(temppiHakemisto+"/png/subs.xml", "r") as fp:
@@ -214,7 +212,6 @@ class txt2srt():
                             kirjoitaSrt.write(steksti+"\n\n")
                             kierros+=1
             kirjoitaSrt.close()         
-
 
 class lomake():  
     def __init__(self):
@@ -293,8 +290,6 @@ class lomake():
         self.ui.lineEdit_komennonEsikatselu.setText(komento)
         self.app.processEvents()
         
-        
-        
     def aloitaMuunnos(self):
         global XTERM
         self.paivitaEsikatselu()
@@ -307,14 +302,12 @@ class lomake():
             self.ui.label_status.setText("ccextractor")
             self.app.processEvents()
             os.system(ccCommand)
-            
         #print("muunnetaan")
         ffCommand=XTERM+" "+self.ui.lineEdit_komennonEsikatselu.text()
         self.ui.label_status.setText("ffmpeg")
         self.app.processEvents()       
         os.system(ffCommand)
         self.valmis()          
-        
         
     def graafinen2srt(self): #Graafiset tekstit sisällytetyksi txt
         global XTERM
@@ -339,7 +332,6 @@ class lomake():
             os.system(tesseCommand)
         txt2srt.createSrt(self.tempDir)
   
-            
     def avaaTiedosto(self):
         fname = QFileDialog.getOpenFileName()[0]
         self.ui.lineEdit_avaaTiedostoNimi.setText(fname)  
@@ -378,9 +370,6 @@ class lomake():
         fname = QFileDialog.getSaveFileName()[0]
         self.ui.lineEdit_tallennaTiedostoNimi.setText(fname)
          
-
-
-        
     def lopeta(self):
         #print("quit")
         self.seis=True
