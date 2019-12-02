@@ -7,5 +7,5 @@ Tekstitys voidaan polttaa kiinni kuvaan, tai siitä voidaan luoda MP4-tiedostoon
 päälle ja pois. Luotu tiedosto toimii ainakin VLC-soittimella ja Enigma2-digiboksilla.
 
 Ohjelman tarvitsemat riippuvuudet pitäisi asentua suorittamalla skripti "asenna-riippuvuudet"
-Sen jälkeen "tstekstita.py" avaa käyttöliittymän, jossa valitaan tiedosto ja tekstitys- ja audioraidat.
+Sen jälkeen ohjelma "tstekstita.py" avaa käyttöliittymän, jossa valitaan tiedosto ja tekstitys- ja audioraidat.
 Painikkeella "Aloita" muunnostyö aloitetaan.
