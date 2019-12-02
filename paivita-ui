@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#
+# päivittää pyqt python-tiedostoon ##FORM_BEGIN## ja ##FORM_END## väliseen kohtaan muuttuneen ui tiedoston. ensin .ui käännetään .py:ksi
+#
+UI="paaikkuna.ui"
+PROGRAMFILE="tstekstita.py"
+#
+mkdir -p roskis
+pyuic5 "$UI" >"$UI.py"
+cat "$PROGRAMFILE" |sed '/##FORM_BEGIN##/q' >uusi.py
+cat "$UI.py" |sed -ne '/^class/,$ p' >>uusi.py
+cat "$PROGRAMFILE"|sed -ne '/##FORM_END##/,$ p' >>uusi.py
+roskisnimi=roskis/"$PROGRAMFILE"-$(date +%y%m%d-%H%M%S)
+mv "$PROGRAMFILE" "$roskisnimi"
+mv uusi.py "$PROGRAMFILE"
+chmod a+x "$PROGRAMFILE"
+rm "$UI.py"
