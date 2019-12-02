@@ -12,6 +12,6 @@ Painikkeella "Aloita" muunnostyö aloitetaan.
 
 
 -----
-paaikkuna.ui on Qt Designerillä tehty käyttöliittymä
-paivita-ui on skripti joka injektoi käyttöliittymän varsinaiseen ohjelmaan, mikäli käyttöliittymää haluaa muuttaa.
-Näitä tiedostoja et tarvitse, ellet halua ohjelmaan tehdä muutoksia.
+  paaikkuna.ui on Qt Designerillä tehty käyttöliittymä
+  paivita-ui on skripti joka injektoi käyttöliittymän varsinaiseen ohjelmaan, mikäli käyttöliittymää haluaa muuttaa.
+  Näitä tiedostoja et tarvitse, ellet halua ohjelmaan tehdä muutoksia.
