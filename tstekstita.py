@@ -269,10 +269,10 @@ class lomake():
         if self.subTracks[valittuTekstiIndex][3]=="DVB Subtitle": #Lähde on DVB-teksti
             #print("DVB subtitle valittu")
             if self.ui.listWidget_valitseTekstiTyyppi.currentRow()==0: #Polta kuvaan
-                print("Polta kuvaan")
+                #print("Polta kuvaan")
                 vsubInput="-filter_complex '[0:v][i:"+self.subTracks[valittuTekstiIndex][2]+"]overlay'"
             elif self.ui.listWidget_valitseTekstiTyyppi.currentRow()==1: # Embedded teksti
-                print("embedded teksti")
+                #print("embedded teksti")
                 vsubInput="-i "+self.tempDir+"/subs.srt"
                 vsubMap="-map 1:s -c:s mov_text"
         elif self.subTracks[valittuTekstiIndex][3]=="Teletext Subtitle": #Lähde on teleteksti
