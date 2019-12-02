@@ -65,7 +65,7 @@ class Ui_Form(object):
         self.label_7.setGeometry(QtCore.QRect(600, 370, 131, 17))
         self.label_7.setObjectName("label_7")
         self.listWidget_tallennusFormaatti = QtWidgets.QListWidget(Form)
-        self.listWidget_tallennusFormaatti.setGeometry(QtCore.QRect(590, 360, 181, 91))
+        self.listWidget_tallennusFormaatti.setGeometry(QtCore.QRect(590, 390, 181, 91))
         font = QtGui.QFont()
         font.setFamily("Ubuntu Mono")
         font.setPointSize(14)
