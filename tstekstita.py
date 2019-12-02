@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+'''
+2019-12-02 Jani Janttari <janttari@yandex.ru>
+Työkalu transport stream-tiedostojen tekstityksen käsittelyyn. Transport streamissa oleva tekstitys voi olla joko DVB-teksti tai teksti-tv-tekstitys. Tekstitys voidaan polttaa kiinni kuvaan, tai siitä voidaan luoda MP4-tiedostoon sisällytetty tekstitys, jonka saa halutessaan päälle ja pois. 
+Luotu tiedosto toimii ainakin VLC-soittimella ja Enigma2-digiboksilla.
+Ohjelman tarvitsemat riippuvuudet pitäisi asentua suorittamalla skripti asenna-riippuvuudet Sen jälkeen ohjelma tstekstita.py avaa käyttöliittymän, jossa valitaan tiedosto ja tekstitys- ja audioraidat. Painikkeella "Aloita" muunnostyö aloitetaan.
+'''
 import time, threading, subprocess, sys, os
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog
