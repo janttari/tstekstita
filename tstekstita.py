@@ -389,4 +389,3 @@ class lomake():
 
 if __name__ == "__main__":
     lo=lomake()
- 
